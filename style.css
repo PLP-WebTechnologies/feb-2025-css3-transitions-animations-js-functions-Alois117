@@ -1,0 +1,53 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Box animation */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 30px auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* Animation to grow the box */
+@keyframes grow {
+    0% {
+        transform: scale(1);
+        background-color: lightblue;
+    }
+    50% {
+        transform: scale(1.5);
+        background-color: yellow;
+    }
+    100% {
+        transform: scale(1);
+        background-color: lightblue;
+    }
+}
+
+footer {
+    margin-top: 40px;
+}
